@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Shop</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+<body>
+<header id="header">
+  <div class="nav">
+    <div class="brand">
+      <img src="Images/happy-shop-logo-design-icon-shopping-bag-happy-face-logo-online-shop-logo-icon-emblems-vector_625890-126-removebg-preview.png" alt="Happy Shop"></a>
+      <span>Happy Shop</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="blog.html" >Blog</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="cart.html" class="cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+  </div>
+</header>
+<div class="wrapper">
+    <main>
+   <section id="about-header">
+        <h2>Welcome to Happy Shop!</h2>
+        <p>Enjoy exclusive deals on the latest women's fashion. Free shipping on orders above ₹999!</p>
+    </section>
+
+<!-- Product Search Section -->
+<section id="search-section" style="text-align:center; margin:40px 0;">
+  <h2>Search Products</h2>
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search for products..." 
+    style="padding:10px; width:50%; border-radius:25px; border:1px solid #ccc; outline:none; font-size:16px;"
+  >
+  <div id="productsList" style="margin-top:20px;">
+    <div class="product"><a href="product1.html">Shirt for women</a></div>
+    <div class="product"><a href="product2.html">Tshirt for women</a></div>
+    <div class="product"><a href="product3.html">Hoodie</a></div>
+    <div class="product"><a href="product5.html">Accessories for women</a></div>
+    <div class="product"><a href="product6.html">Watches for women</a></div>
+  </div>
+</section>
+
+
+<section class="products">
+    <h1>WOMEN T-SHIRTS</h1>
+    <p>Collections New Modern Design</p>
+    <div class="pro-container">
+  <div class="pro" onclick="window.location.href='product1.html'">
+    <a href="product1.html"><img src="Images/product1/pro1.avif" alt="T-Shirt 1"></a>
+    <div class="des">
+        <h5>Fitted Cotton T-Shirt</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 699.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" 
+        data-name="Fitted Cotton T-Shirt" 
+        data-price="699" 
+        data-image="Images/product1/pro1.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+<div class="pro" onclick="window.location.href='product1.html'">
+    <a href="product1.html"><img src="Images/product1/pro2.avif" alt="T-Shirt 1"></a>
+    <div class="des">
+        <h5>Fitted Graphic Tee</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 799.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" 
+        data-name="Fitted Graphic Tee" 
+        data-price="799" 
+        data-image="Images/product1/pro2.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+<div class="pro" onclick="window.location.href='product1.html'">
+    <a href="product1.html"><img src="Images/product1/pro3.avif" alt="Classic White Tee"></a>
+    <div class="des">
+        <h5>Classic White Tee</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 699.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" 
+        data-name="Classic White Tee" 
+        data-price="699" 
+        data-image="Images/product1/pro3.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+<div class="pro" onclick="window.location.href='product1.html'">
+    <a href="product1.html"><img src="Images/product1/pro4.avif" alt="Sporty Cotton Tee"></a>
+    <div class="des">
+        <h5>Sporty Cotton Tee</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 799.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" 
+        data-name="Sporty Cotton Tee" 
+        data-price="799" 
+        data-image="Images/product1/pro4.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+<div class="pro" onclick="window.location.href='product2.html'">
+    <a href="product2.html"><img src="Images/product1/pro11.avif" alt="T-Shirt 2"></a>
+    <div class="des">
+        <h5>Fitted Cotton T-Shirt</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 999.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" data-name="Fitted Cotton T-Shirt" data-price="999" data-image="Images/product1/pro11.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+<div class="pro" onclick="window.location.href='product2.html'">
+    <a href="product2.html"><img src="Images/product1/pro22.avif" alt="T-Shirt 3"></a>
+    <div class="des">
+        <h5>Fitted Cotton T-Shirt</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 899.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" data-name="Fitted Cotton T-Shirt" data-price="899" data-image="Images/product1/pro22.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+<div class="pro" onclick="window.location.href='product2.html'">
+    <a href="product2.html"><img src="Images/product1/pro33.avif" alt="T-Shirt 3"></a>
+    <div class="des">
+        <h5>Fitted Cotton T-Shirt</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 799.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" data-name="Fitted Cotton T-Shirt" data-price="799" data-image="Images/product1/pro33.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+<div class="pro" onclick="window.location.href='product2.html'">
+    <a href="product2.html"><img src="Images/product1/pro44.avif" alt="T-Shirt 3"></a>
+    <div class="des">
+        <h5>Fitted Cotton T-Shirt</h5>
+        <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Rs 799.00</h4>
+    </div>
+    <a href="#" class="add-to-cart" data-name="Fitted Cotton T-Shirt" data-price="799" data-image="Images/product1/pro44.avif">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+</div>
+
+
+<section class="products">
+    <h1>WOMEN HOODIES</h1>
+    <p>Latest Hoodie Collection</p>
+    <div class="pro-container">
+      <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/1.avif" alt="Hoodie 1"></a>
+            <div class="des">
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 799.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="799" data-image="Images/product3/1.avif">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/2.avif" alt="Hoodie 2"></a>
+            <div class="des">
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="1999" data-image="Images/product3/2.avif">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+
+         <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/3.avif" alt="Hoodie 2"></a>
+            <div class="des">
+                
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="999" data-image="Images/product3/3.avif"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+         <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/4.avif" alt="Hoodie 2"></a>
+            <div class="des">
+                
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="1999" data-image="Images/product3/4.avif"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+         <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/5.avif" alt="Hoodie 2"></a>
+            <div class="des">
+                
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="999" data-image="Images/product3/5.avif"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+         <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/6.avif" alt="Hoodie 2"></a>
+            <div class="des">
+               
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>₹Rs 1199.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="1199" data-image="Images/product3/6.avif"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+         <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/7.avif" alt="Hoodie 2"></a>
+            <div class="des">
+                
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="1999" data-image="Images/product3/7.avif"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+         <div class="pro" onclick="window.location.href='product3.html'">
+            <a href="product3.html"><img src="Images/product3/8.avif" alt="Hoodie 2"></a>
+            <div class="des">
+                
+                <h5>Oversized Zip-through Hoodie</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Oversized Zip-through Hoodie" data-price="1999" data-image="Images/product3/8.avif"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+
+    </div>
+</section>
+
+<section class="products">
+    <h1>WOMEN WATCHES</h1>
+    <p>Trending Watch Collection</p>
+    <div class="pro-container">
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p1.webp" alt="Watch 1"></a>
+            <div class="des">
+               
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1899.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="1899" data-image="Images/product5/p1.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p2.webp" alt="Watch 1"></a>
+            <div class="des">
+                
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1899.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="1899" data-image="Images/product5/p2.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p3.webp" alt="Watch 1"></a>
+            <div class="des">
+               
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="1999" data-image="Images/product5/p3.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p4.webp" alt="Watch 1"></a>
+            <div class="des">
+                
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1899.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="1899" data-image="Images/product5/p4.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p5.webp" alt="Watch 1"></a>
+            <div class="des">
+                
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1899.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="1899" data-image="Images/product5/p5.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p6.webp" alt="Watch 1"></a>
+            <div class="des">
+               
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 2999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="2999" data-image="Images/product5/p6.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p7.webp" alt="Watch 1"></a>
+            <div class="des">
+               
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1999.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="1999" data-image="Images/product5/p7.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='product5.html'">
+            <a href="product5.html"><img src="Images/product5/p8.webp" alt="Watch 1"></a>
+            <div class="des">
+                
+                <h5>Timeora Coffee Blush Rosegold</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>Rs 1899.00</h4>
+            </div>
+            <a href="#" class="add-to-cart" data-name="Timeora Coffee Blush Rosegold" data-price="1899" data-image="Images/product5/p8.webp"><i class="cart fa-solid fa-cart-shopping"></i></a>
+        </div>
+        
+    </div>
+</section>
+
+
+
+     <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Crazy Deals Tonight</h4>
+            <h2>Buy 1 Get 1 Free</h2>
+            <span>The Best Classic Design is on sale </span>
+            <button class="btn">Learn More</button>
+        </div>
+        <div class="banner-box1">
+            <h4>Spring\Summer</h4>
+            <h2>Upcoming Season</h2>
+            <span>Rush for Great Offers</span>
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
+
+    <section id="banner3" >
+        <div class="banner-box">
+            <h4>Casual wear</h4>
+            <h2>Feel comfortable</h2>
+            <span>Have cozy feel</span>
+            
+        </div>
+       
+        <div class="banner-box2">
+            <h4>New GenZ Collections</h4>
+            <h2>Upcoming Season</h2>
+            <span>Have stunning collections to your wadrobe</span> 
+        </div>
+
+        <div class="banner-box3">
+            <h4>Women's Watches</h4>
+            <h2>Save upto 70%</h2>
+            <span>Give asthetic look</span>   
+        </div> 
+
+     <section id="" class="watch">
+        <div class="video">
+            <video autoplay muted loop src="Images/home/watch.mp4"></video>
+            <div class="content">
+                <h4>Women's Watches</h4>
+                <h2>Save upto 70%</h2>
+                <span>Give asthetic look</span>   
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="newsletter" class="form">
+        <div class="newstext">
+            <h4>Sign up for newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" palceoholder="enter your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    </main>
+     <footer class="section">
+            <div class="col">
+                <img class="logo" src="./Images/happy-shop-logo-design-icon-shopping-bag-happy-face-logo-online-shop-logo-icon-emblems-vector_625890-126-removebg-preview.png" height="100px" alt="">
+                <h3>Contact</h3>
+                <p class="details">
+                    <strong>Address :</strong>Brigade Rd, Bengaluru, Karnataka 560001
+                </p>
+                 <p class="details">
+                    <strong>Phone :</strong>(91 +)8050765432/9447654345
+                </p>
+                 <p class="details">
+                    <strong>Hours :</strong>10:00 - 20:00, Mon - Sat
+                </p>
+                <div class="follow">
+                    <h4>Follow Us on</h4>
+                       <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                       </div>
+                </div>   
+            </div>
+
+            <div class="col">
+                <h3>About</h3> 
+                <a href="">About us</a>
+                <a href="">Delivery information</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Contact us</a>
+            </div>
+            <div class="col">
+                <h3>My Account</h3>
+                <a href="">Sign-in</a>
+                <a href="">View Cart</a>
+                <a href="">My Wishlist</a>
+                <a href="">Track My Order</a>
+                <a href="">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="images/pay/app.jpg" alt="">
+                    <img src="images/pay/play.jpg" alt="">
+                </div>
+                <p>Secured Follow Link (ctrl + click)</p>
+                <div class="row">
+                    <a href="#"><img src="Images/payment/payment-1.png" alt=""></a>
+                    <a href="#"><img src="Images/payment/payment-2.png" alt=""></a>
+                    <a href="#"><img src="Images/payment/payment-3.png" alt=""></a>
+                    <a href="#"><img src="Images/payment/payment-4.png" alt=""></a>
+                    <a href="#"><img src="Images/payment/payment-5.png" alt=""></a>
+                </div>    
+            </div>
+            <div class="copyright">
+                <p>@ 2025, E-COMMERCE WEBSITE-Happy Shop</p>
+            </div>
+    </footer>
+</div>
+   <script>
+  const input = document.querySelector("#searchInput");
+  const products = document.querySelectorAll(".product");
+
+  input.addEventListener("keyup", function() {
+    const filter = input.value.toLowerCase().trim();
+    products.forEach((product) => {
+      const text = product.textContent.toLowerCase();
+      product.style.display = (filter !== "" && text.includes(filter)) ? "block" : "none";
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const cartButtons = document.querySelectorAll('.cart');
+
+    cartButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const product = button.closest('.pro');
+        const name = product.querySelector('h5')?.textContent.trim();
+        const priceText = product.querySelector('h4')?.textContent.trim().replace(/[^0-9.]/g, ''); // ✅ fixed line
+        const image = product.querySelector('img')?.getAttribute('src');
+        const price = parseFloat(priceText);
+        
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        const existing = cart.find(item => item.name === name);
+        if (existing) {
+          existing.qty += 1;
+        } else {
+          cart.push({ name, price, image, qty: 1 });
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${name} added to cart!`);
+      });
+    });
+  });
+</script>
+</body>
+</html>

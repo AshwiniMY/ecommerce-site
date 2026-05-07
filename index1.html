@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section id="pro-details">
+        <div class="single-pro-image">
+            <img width="100%" id="mainimg" src="Images/index1/pro1.avif" alt="">
+        
+            <div class="sub-img-group">
+            <div class="sub-img-col">
+                <img width="100%" class="subimg" src="Images/index1/pro1.avif" alt="">
+            </div>
+            <div class="sub-img-col">
+                <img width="100%" class="subimg" src="Images/index1/pro2.avif" alt="">
+            </div>
+            <div class="sub-img-col">
+                <img width="100%" class="subimg" src="Images/index1/pro3.avif" alt="">
+            </div>
+            <div class="sub-img-col">
+                <img width="100%" class="subimg" src="Images/index1/pro4.avif" alt="">
+            </div>
+        </div>
+        </div>  
+        <div class="single-product-details">
+            <h6>T-shirt</h6>  
+            <h4>Fitted Cotton T-Shirt</h4>
+            <h2>699.00</h2>
+            <select name="" id="">
+                <option value="">Select Size</option>
+                <option value="">Small</option>
+                <option value="">Medium</option>
+                <option value="">Large</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select>
+
+            <!-- <p class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia suscipit consectetur, dolor rem recusandae alias nisi autem, nihil illo atque, eum asperiores repudiandae. Voluptatem perspiciatis rerum autem. Accusantium, quod voluptatum.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati, rem commodi temporibus dicta blanditiis iure culpa facere ducimus officiis fuga officia quis ad? Non commodi incidunt magnam corrupti sit.
+            </p> -->
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum, quaerat est vel soluta aspernatur fugit possimus esse doloribus distinctio unde, veritatis debitis autem eligendi quasi accusamus. Sed, iusto accusamus. </span>
+        </div>    
+    </section>
+    <script>
+        let mainimg=document.querySelector("#mainimg");
+        let subimg=document.querySelectorAll(".subimg");
+        subimg[0].onclick=function(){
+            mainimg.src=subimg[0].src;
+        }
+        subimg[1].onclick=function(){
+            mainimg.src=subimg[1].src;
+        }
+        subimg[2].onclick=function(){
+            mainimg.src=subimg[2].src;
+        }
+        subimg[3].onclick=function(){
+            mainimg.src=subimg[3].src;
+        }
+    </script>
+</body>
+</html>

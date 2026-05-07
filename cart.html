@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Shop</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
+<body>
+       
+<header id="header">
+  <div class="nav">
+    <div class="brand">
+      <img src="Images/happy-shop-logo-design-icon-shopping-bag-happy-face-logo-online-shop-logo-icon-emblems-vector_625890-126-removebg-preview.png" alt="Happy Shop"></a>
+      <span>Happy Shop</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="blog.html" >Blog</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="cart.html" class="cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+  </div>
+</header>
+
+    <section id="about-header">
+         <h2>Cart</h2>
+    <p>Check your selected items and proceed to checkout!</p>
+ </section>
+  <section id="cart">
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Remove</th>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Items from localStorage -->
+      </tbody>
+    </table>
+  </section>
+
+
+  <section id="cart-add">
+    <div id="coupon">
+      <h3>Apply Coupon</h3>
+      <div>
+        <input type="text" placeholder="Enter your coupon">
+        <button class="normal">Apply</button>
+      </div>
+    </div>
+
+    <div id="subtotal">
+      <h3>Cart Totals</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td id="subtotal-amount">₹0</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td id="total-amount">₹0</td>
+        </tr>
+      </table>
+      <button>Proceed to Checkout</button>
+    </div>
+  </section>
+
+
+    <section id="newsletter" class="form">
+        <div class="newstext">
+            <h4>Sign up for newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" palceoholder="enter your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+ </main>
+    
+  <footer class="section">
+    <div class="col">
+        <img class="logo" src="./Images/happy-shop-logo-design-icon-shopping-bag-happy-face-logo-online-shop-logo-icon-emblems-vector_625890-126-removebg-preview.png" alt="Happy Shop">
+        <h3>Contact</h3>
+        <p><strong>Address:</strong> Brigade Rd, Bengaluru, Karnataka 560001</p>
+        <p><strong>Phone:</strong> +91 8050765432</p>
+        <p><strong>Hours:</strong> 10:00 - 20:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h3>About</h3>
+        <a href="#">About us</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+    </div>
+
+    <div class="col">
+        <h3>My Account</h3>
+        <a href="#">Sign-in</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h3>Install App</h3>
+        <p>From App Store or Google Play</p>
+        <div class="app-row">
+            <img src="images/pay/app.jpg" alt="App Store">
+            <img src="images/pay/play.jpg" alt="Google Play">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <div class="payment-row">
+            <img src="Images/payment/payment-1.png" alt="Visa">
+            <img src="Images/payment/payment-2.png" alt="Mastercard">
+            <img src="Images/payment/payment-3.png" alt="Maestro">
+            <img src="Images/payment/payment-4.png" alt="American Express">
+            <img src="Images/payment/payment-5.png" alt="PayPal">
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 Happy Shop. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+let slides = document.querySelectorAll('.hero-slide');
+let current = 0;
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+
+document.querySelector('.next').onclick = () => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+};
+
+document.querySelector('.prev').onclick = () => {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+};
+
+window.onscroll = function() {
+  const header = document.getElementById("header");
+  if (window.pageYOffset > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+};
+// Auto Slide every 6 seconds
+setInterval(() => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}, 6000);
+</script>
+
+</body>
+</html>
