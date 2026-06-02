@@ -1,6 +1,8 @@
 # E-Commerce Website
 A responsive e-commerce front-end built with HTML, CSS, Bootstrap, and JavaScript.
 
+**Live Demo:** [https://ashwinimy.github.io/ecommerce-site/](https://ashwinimy.github.io/ecommerce-site/)
+
 ## Setup
 ```bash
 git clone https://github.com/AshwiniMY/ecommerce-site.git
